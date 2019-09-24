@@ -1,0 +1,51 @@
+// ============================================= 
+//              Extends                           
+// ============================================= 
+
+// Navbar
+%nav-item-horz {
+    @include mq(tablet) {
+        margin: 0 em(2px);
+    }
+}
+
+%nav-item-link {
+    font-size: em(18px);
+    text-align: center;
+    display: block;
+    padding: em(10px);
+    border-radius: em($br--default);
+    width: 100%;
+    color: palette(color-primary);
+    border-bottom: 1px solid transparent;
+    transition:
+        background-color $trns-duration ease-in-out,
+        color $trns-duration ease-in-out;
+
+    @include mq(mobile) {
+        border-radius: 0;
+        border-bottom-color: palette(grey);
+        padding-top: em(14px);
+        padding-bottom: em(14px);
+    }
+}
+
+%nav-item-on {
+    color: $white;
+    background-color: palette(color-primary);
+    text-decoration: none;
+}
+
+
+// Image
+%img-disp {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Icons
+%icn--ui {
+    line-height: 0;
+    cursor: pointer;
+}

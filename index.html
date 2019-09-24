@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Electrical</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="container">
+    <header class="header row">
+        <div class="row__col--3">
+            <a class="link" href="#">
+                <img class="img__logo" src="img/logo.jpg" alt="Logo name">
+            </a>
+        </div><!-- ./row__col--3 -->
+        <div class="row__col--9">
+            <nav role="navigation">
+                <span id="toggle" class="icn--nav-toggle is-dispayed-mobile">
+                    <b class="srt">Toggle</b>
+                </span>
+                <ul class="nav is-collapsed-mobile">
+                    <li class="nav__link--current"><a href="index.html">Home</a></li>
+                    <li class="nav__link"><a href="#">Products</a></li>
+                    <li class="nav__link"><a href="#">About</a></li>
+                    <li class="nav__link"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div><!-- ./row__col--9 -->
+    </header><!-- ./row -->
+
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script>
+        $('#toggle').click(function () {
+            $(this).next('.nav').toggleClass("is-collapsed-mobile");
+        });
+    </script>
+</body><!-- ./container -->
+
+</html>

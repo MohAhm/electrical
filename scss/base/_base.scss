@@ -1,0 +1,90 @@
+// =============================================
+//              General                    
+// ============================================= 
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: $black;
+    font-family: $font-family;
+    line-height: ($base__line/$base__font-size);
+}
+
+h1,
+h2 {
+    font-weight: $font-weight--bold;
+    letter-spacing: $letter-space;
+}
+
+h1 {
+    font-size: em(42px);
+    line-height: (46px / 42px);
+}
+
+h2 {
+    font-size: em(24px);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+a {
+    color: palette(color-primary, light);
+    text-decoration: none;
+    transition: color $trns-duration ease-in-out;
+
+    &:hover {
+        color: palette(color-primary);
+        text-decoration: underline;
+    }
+}
+
+p {
+    font-size: em(18px);
+    line-height: (27px / 18px);
+    margin: 0 0 em(30px, 18px);
+    font-weight: $font-weight--light;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    outline: 0;
+    text-transform: uppercase;
+}
+
+input,
+textarea {
+    display: block;
+    padding: 15px;
+    width: 100%;
+    outline: 0;
+    border: 0;
+}
+
+input:focus,
+textarea:focus {
+    transition: $trns_duration;
+}
+
+section {
+    padding: em(60px) 0;
+}
+
+footer {
+    p {
+        font-size: em(16px);
+        margin-top: em(22px, 16px);
+    }
+}
