@@ -331,7 +331,8 @@ template {
 body {
   color: #1C1C1C;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.5; }
+  line-height: 1.5;
+  background-color: #eceeef; }
 
 h1,
 h2 {
@@ -398,7 +399,7 @@ footer p {
   padding: 0 0.625em; }
   @media (min-width: 769px) {
     .container {
-      max-width: 1050px; } }
+      max-width: 90%; } }
 
 .row {
   display: flex;
@@ -448,6 +449,16 @@ footer p {
       [class^=col] + [class^=col] {
         margin-left: 0.625em; } }
 
+.main-header {
+  background-color: #FFF; }
+  @media (min-width: 769px) {
+    .main-header {
+      position: fixed;
+      top: 0;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+      width: 100%;
+      z-index: 1000; } }
+
 @media (min-width: 769px) {
   .nav__link, .nav__link--current {
     margin: 0 0.125em; } }
@@ -486,6 +497,7 @@ footer p {
 .nav {
   display: flex;
   flex-direction: column;
+  margin-top: 0.8333333333em;
   padding: 1.25em 0;
   flex-basis: 100%; }
   @media (min-width: 769px) {
@@ -500,13 +512,13 @@ footer p {
 .icn--nav-toggle {
   width: 25px;
   height: 17px;
-  border-top: solid 3px #BDC3C7;
-  border-bottom: solid 3px #BDC3C7;
+  border-top: solid 3px #7e8991;
+  border-bottom: solid 3px #7e8991;
   position: relative; }
   .icn--nav-toggle:before {
     width: 25px;
     height: 3px;
-    background: #BDC3C7;
+    background: #7e8991;
     top: 4px; }
 
 @media (min-width: 320px) and (max-width: 768px) {

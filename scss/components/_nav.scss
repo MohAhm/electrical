@@ -4,6 +4,7 @@
 
 .nav {
     @include flexbox($dir: column);
+    margin-top: em(15px, 18px);
     padding: em(20px) 0;
     flex-basis: 100%;
 

@@ -10,6 +10,7 @@ body {
     color: $black;
     font-family: $font-family;
     line-height: ($base__line/$base__font-size);
+    background-color: palette(grey, light);
 }
 
 h1,

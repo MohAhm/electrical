@@ -9,34 +9,52 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="container">
-    <header class="header row">
-        <div class="row__col--3">
-            <a class="link" href="#">
-                <img class="img__logo" src="img/logo.jpg" alt="Logo name">
-            </a>
-        </div><!-- ./row__col--3 -->
-        <div class="row__col--9">
-            <nav role="navigation">
-                <span id="toggle" class="icn--nav-toggle is-dispayed-mobile">
-                    <b class="srt">Toggle</b>
-                </span>
-                <ul class="nav is-collapsed-mobile">
-                    <li class="nav__link--current"><a href="index.html">Home</a></li>
-                    <li class="nav__link"><a href="#">Products</a></li>
-                    <li class="nav__link"><a href="#">About</a></li>
-                    <li class="nav__link"><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div><!-- ./row__col--9 -->
-    </header><!-- ./row -->
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="row">
+                <div class="row__col--3">
+                    <a class="link" href="#">
+                        <img class="img__logo" src="img/logo.jpg" alt="Logo name">
+                    </a>
+                </div><!-- ./row__col--3 -->
+                <div class="row__col--9">
+                    <nav role="navigation">
+                        <span id="toggle" class="icn--nav-toggle is-dispayed-mobile">
+                            <b class="srt">Toggle</b>
+                        </span>
+                        <ul class="nav is-collapsed-mobile">
+                            <li class="nav__link--current"><a href="index.html">Home</a></li>
+                            <li class="nav__link"><a href="#">Products</a></li>
+                            <li class="nav__link"><a href="#">About</a></li>
+                            <li class="nav__link"><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div><!-- ./row__col--9 -->
+            </div><!-- ./row -->
+        </div><!-- ./container -->
+    </header><!-- ./main-header -->
 
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() <= 100) {
+                    $(".nav").css("padding", "1.250em 0");
+                    $(".img__logo").css("max-width", "100%");
+
+                } else {
+                    $(".nav").css("padding", "0");
+                    $(".img__logo").css("max-width", "25%");
+                }
+            });
+        });
+    </script>
     <script>
         $('#toggle').click(function () {
             $(this).next('.nav').toggleClass("is-collapsed-mobile");
         });
     </script>
-</body><!-- ./container -->
+</body>
 
 </html>
