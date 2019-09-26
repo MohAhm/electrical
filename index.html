@@ -10,33 +10,57 @@
 </head>
 
 <body>
-    <header class="main-header">
+    <div class="wrap">
+        <header class="main-header">
+            <div class="container">
+                <div class="row">
+                    <div class="row__col--3">
+                        <a class="link" href="#">
+                            <img class="img__logo" src="img/logo.jpg" alt="Logo name">
+                        </a>
+                    </div><!-- ./row__col--3 -->
+                    <div class="row__col--9">
+                        <nav role="navigation">
+                            <span id="toggle" class="icn--nav-toggle is-dispayed-mobile">
+                                <b class="srt">Toggle</b>
+                            </span>
+                            <ul class="nav is-collapsed-mobile">
+                                <li class="nav__link--current"><a href="index.html">Home</a></li>
+                                <li class="nav__link"><a href="#">Products</a></li>
+                                <li class="nav__link"><a href="#">About</a></li>
+                                <li class="nav__link"><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div><!-- ./row__col--9 -->
+                </div><!-- ./row -->
+            </div><!-- ./container -->
+        </header><!-- ./main-header -->
+
+        <div class="banner">
+            <div class="container">
+                <div class="row center-align">
+                    <div class="row__col--12">
+                        <h1 class="headline">Do consectetur eiusmod minim</h1>
+                        <span class="tagline">Sunt exercitation consectetur dolore nisi commodo id velit occaecat</span>
+                    </div><!-- ./row__col--12 -->
+                </div><!-- ./row -->
+            </div><!-- ./container -->
+        </div>
+
+    </div><!-- ./wrap -->
+
+    <footer class="main-footer">
         <div class="container">
-            <div class="row">
-                <div class="row__col--3">
-                    <a class="link" href="#">
-                        <img class="img__logo" src="img/logo.jpg" alt="Logo name">
-                    </a>
-                </div><!-- ./row__col--3 -->
-                <div class="row__col--9">
-                    <nav role="navigation">
-                        <span id="toggle" class="icn--nav-toggle is-dispayed-mobile">
-                            <b class="srt">Toggle</b>
-                        </span>
-                        <ul class="nav is-collapsed-mobile">
-                            <li class="nav__link--current"><a href="index.html">Home</a></li>
-                            <li class="nav__link"><a href="#">Products</a></li>
-                            <li class="nav__link"><a href="#">About</a></li>
-                            <li class="nav__link"><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div><!-- ./row__col--9 -->
+            <div class="row center-align">
+                <div class="row__col--12">
+                    <p>&copy;2019 Electrical.</p>
+                </div><!-- ./row__col--12 -->
             </div><!-- ./row -->
         </div><!-- ./container -->
-    </header><!-- ./main-header -->
+    </footer><!-- ./main-footer -->
 
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script>
+    <!-- <script>
         $(document).ready(function () {
             $(window).scroll(function () {
                 if ($(window).scrollTop() <= 100) {
@@ -49,7 +73,7 @@
                 }
             });
         });
-    </script>
+    </script> -->
     <script>
         $('#toggle').click(function () {
             $(this).next('.nav').toggleClass("is-collapsed-mobile");

@@ -20,6 +20,13 @@
   content: '';
   position: absolute; }
 
+.center-align {
+  text-align: center; }
+
+@media (min-width: 769px) {
+  .wrap {
+    min-height: calc(100vh - 168.66px); } }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -333,6 +340,9 @@ body {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   background-color: #eceeef; }
+  @media (min-width: 769px) {
+    body {
+      padding-top: 8.25em; } }
 
 h1,
 h2 {
@@ -450,14 +460,34 @@ footer p {
         margin-left: 0.625em; } }
 
 .main-header {
-  background-color: #FFF; }
+  background-color: #FFF;
+  z-index: 1000; }
   @media (min-width: 769px) {
     .main-header {
       position: fixed;
       top: 0;
       box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-      width: 100%;
-      z-index: 1000; } }
+      width: 100%; } }
+
+.main-footer {
+  color: #FFF;
+  padding: 2em;
+  background-color: #1C1C1C; }
+
+.banner {
+  color: #FFF;
+  padding: 3.1875em 0;
+  margin-bottom: 3.75em;
+  background: #1C1C1C url("../img/12.jpg") no-repeat bottom;
+  background-size: cover; }
+  @media (min-width: 769px) {
+    .banner {
+      padding: 10em 0; } }
+  .banner .headline {
+    margin-bottom: 0; }
+  @media (min-width: 769px) {
+    .banner .tagline {
+      font-size: 1.375em; } }
 
 @media (min-width: 769px) {
   .nav__link, .nav__link--current {
@@ -481,9 +511,9 @@ footer p {
       padding-bottom: 0.875em; } }
 
 .nav__link a:hover, .nav__link--current a {
+  text-decoration: none;
   color: #FFF;
-  background-color: #208A01;
-  text-decoration: none; }
+  background-color: #208A01; }
 
 .img__logo {
   display: block;

@@ -31,9 +31,12 @@
 }
 
 %nav-item-on {
-    color: $white;
-    background-color: palette(color-primary);
     text-decoration: none;
+    color: $white; // palette(color-primary, dark);
+    background-color: palette(color-primary);
+
+    // border-color: palette(color-primary, dark);
+    // border-radius: 0;
 }
 
 

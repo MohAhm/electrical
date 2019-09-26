@@ -31,6 +31,14 @@
 }
 
 // Center alignment
-%center-align {
+.center-align {
     text-align: center;
+}
+
+// Sticky Footer
+.wrap {
+    @include mq(tablet) {
+        // 168.66px is the height of the footer
+        min-height: calc(100vh - 168.66px);
+    }
 }
