@@ -6,21 +6,12 @@
     color: $white;
     padding: em(51px) 0;
     margin-bottom: em(60px);
-    background: $black url($path--rel+'/12.jpg') no-repeat bottom;
+    background: $black url($path--rel+'/13.jpg') no-repeat bottom;
     background-size: cover;
 
     @include mq(tablet) {
         padding: em(160px) 0;
-    }
-
-    .headline {
-        margin-bottom: 0;
-    }
-
-    .tagline {
-
-        @include mq(tablet) {
-            font-size: em(22px);
-        }
+        // remove gap between header and banner
+        margin-top: em(-7px);
     }
 }

@@ -17,21 +17,20 @@ body {
     }
 }
 
-h1,
-h2 {
-    font-weight: $font-weight--bold;
-    letter-spacing: $letter-space;
-}
-
 h1 {
-    font-size: em(42px);
-    line-height: (46px / 42px);
+    @extend %hdln-prim;
 }
 
 h2 {
-    font-size: em(24px);
+    @extend %hdln-seco;
+}
+
+h3 {
     text-transform: uppercase;
-    text-align: center;
+    font-size: em(20px);
+    line-height: ($base__line / 24px);
+    margin-top: em(13px);
+    margin-bottom: em(8px);
 }
 
 a {
@@ -46,7 +45,7 @@ a {
 }
 
 p {
-    font-size: em(18px);
+    font-size: em(14px);
     line-height: (27px / 18px);
     margin: 0 0 em(30px, 18px);
     font-weight: $font-weight--light;
@@ -62,6 +61,7 @@ li {
 img {
     max-width: 100%;
     height: auto;
+    transition: transform $trns-duration cubic-bezier(.7, -0.39, .31, 1.38);
 }
 
 button {

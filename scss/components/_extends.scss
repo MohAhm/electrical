@@ -16,8 +16,8 @@
     padding: em(10px);
     border-radius: em($br--default);
     width: 100%;
-    color: palette(color-primary);
-    border-bottom: 1px solid transparent;
+    color: palette(grey, dark);
+    border-bottom: 2px solid transparent;
     transition:
         background-color $trns-duration ease-in-out,
         color $trns-duration ease-in-out;
@@ -32,11 +32,24 @@
 
 %nav-item-on {
     text-decoration: none;
-    color: $white; // palette(color-primary, dark);
-    background-color: palette(color-primary);
+    color: palette(color-primary);
+    border-color: palette(color-primary, dark);
+    border-radius: 0;
+}
 
-    // border-color: palette(color-primary, dark);
-    // border-radius: 0;
+
+// Headlines
+%hdln-prim {
+    font-weight: $font-weight--bold;
+    font-size: em(42px);
+    line-height: (46px / 42px);
+}
+
+%hdln-seco {
+    font-size: em(24px);
+    text-transform: uppercase;
+    letter-spacing: $letter-space;
+    color: $black;
 }
 
 
@@ -51,4 +64,16 @@
 %icn--ui {
     line-height: 0;
     cursor: pointer;
+}
+
+
+// Buttons
+%btn {
+    width: 100%;
+    color: $white;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    transition: background-color $trns-duration ease-in-out,
+        color $trns-duration ease-in-out;
 }

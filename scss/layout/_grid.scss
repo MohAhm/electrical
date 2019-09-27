@@ -24,20 +24,20 @@
     }
 }
 
-[class^=col] {
+[class^="row__col--"] {
     margin-top: em(10px);
-    flex-basis: 100%;
-    min-height: em(25px);
     padding: em(10px);
-    border-radius: em($br--default);
 
     @include mq(tablet) {
-        @include flexbox($just: center);
         margin-top: 0;
-        align-items: center;
 
         &+& {
             margin-left: em(10px);
         }
     }
+}
+
+.sponsors {
+    background-color: $white;
+    padding: em(51px) 0;
 }
