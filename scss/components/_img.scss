@@ -6,6 +6,11 @@
 
     @include elem(logo) {
         @extend %img-disp;
+
+        @include mq(tablet) {
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
 
     @include elem(frame) {
@@ -43,5 +48,10 @@
                 opacity: 1;
             }
         }
+    }
+
+    @include elem(sponsor) {
+        @extend %img-disp;
+        max-height: em(40px);
     }
 }

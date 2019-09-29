@@ -6,6 +6,8 @@
     <title>Electrical</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="js/slick/slick.css">
+    <link rel="stylesheet" href="js/slick/slick-theme.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -47,7 +49,7 @@
             </div><!-- ./container -->
         </div><!-- ./banner -->
 
-        <div class="products">
+        <section class="products">
             <div class="container">
                 <h2 class="headline-secondary center-align">Aliqua Consequat</h2>
 
@@ -61,7 +63,6 @@
                                     commodo.</p>
                             </div><!-- ./img__frame--overlay -->
                         </a><!-- ./img__frame -->
-                        <button class="btn">Read more</button>
                     </div><!-- ./row__col--4 -->
                     <div class="row__col--4">
                         <a href="#" class="img__frame">
@@ -73,7 +74,6 @@
                                 </p>
                             </div><!-- ./img__frame--overlay -->
                         </a><!-- ./img__frame -->
-                        <button class="btn">Read more</button>
                     </div><!-- ./row__col--4 -->
                     <div class="row__col--4">
                         <a href="#" class="img__frame">
@@ -85,7 +85,6 @@
                                 </p>
                             </div><!-- ./img__frame--overlay -->
                         </a><!-- ./img__frame -->
-                        <button class="btn">Read more</button>
                     </div><!-- ./row__col--4 -->
                 </div><!-- ./row -->
 
@@ -99,7 +98,6 @@
                                     commodo.</p>
                             </div><!-- ./img__frame--overlay -->
                         </a><!-- ./img__frame -->
-                        <button class="btn">Read more</button>
                     </div><!-- ./row__col--4 -->
                     <div class="row__col--4">
                         <a href="#" class="img__frame">
@@ -111,7 +109,6 @@
                                 </p>
                             </div><!-- ./img__frame--overlay -->
                         </a><!-- ./img__frame -->
-                        <button class="btn">Read more</button>
                     </div><!-- ./row__col--4 -->
                     <div class="row__col--4">
                         <a href="#" class="img__frame">
@@ -123,17 +120,44 @@
                                 </p>
                             </div><!-- ./img__frame--overlay -->
                         </a><!-- ./img__frame -->
-                        <button class="btn">Read more</button>
                     </div><!-- ./row__col--4 -->
                 </div><!-- ./row -->
             </div><!-- ./container -->
-        </div><!-- ./products -->
+        </section><!-- ./products -->
 
-        <div class="sponsors">
+        <section class="sponsors">
             <div class="container">
                 <h2 class="headline-secondary center-align">Velit Dolor</h2>
-            </div>
-        </div>
+
+                <div class="row slides">
+                    <div class="row__col--3">
+                        <img class="img__sponsor" src="img/abb.png" alt="">
+                    </div>
+                    <div class="row__col--3">
+                        <img class="img__sponsor" src="img/eaton.png" alt="">
+                    </div>
+                    <div class="row__col--3">
+                        <img class="img__sponsor" src="img/philips.png" alt="">
+                    </div>
+                    <div class="row__col--3">
+                        <img class="img__sponsor" src="img/led.png" alt="">
+                    </div>
+                    <div class="row__col--3">
+                        <img class="img__sponsor" src="img/schneider.png" alt="">
+                    </div>
+                    <div class="row__col--3">
+                        <img class="img__sponsor" src="img/osram.png" alt="">
+                    </div>
+                    <div class="row__col--3">
+                        <img class="img__sponsor" src="img/emerson.png" alt="">
+                    </div>
+                    <div class="row__col--3">
+                        <img class="img__sponsor" src="img/sy.png" alt="">
+                    </div>
+                </div><!-- ./row -->
+            </div><!-- ./container -->
+        </section><!-- ./sponsors -->
+
     </div><!-- ./wrap -->
 
     <footer class="main-footer">
@@ -146,10 +170,26 @@
         </div><!-- ./container -->
     </footer><!-- ./main-footer -->
 
-    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/slick/slick.min.js"></script>
     <script>
         $('#toggle').click(function () {
             $(this).next('.nav').toggleClass("is-collapsed-mobile");
+        });
+
+        $('.slides').slick({
+            autoplay: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+
+            responsive: [{
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
+
         });
     </script>
 </body>
