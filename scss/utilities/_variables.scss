@@ -31,7 +31,7 @@ $color-palettes: (
     color-primary: (
         light   : lighten($color-primary, 15%),
         base    : $color-primary,
-        dark    : darken($color-primary, 15%)
+        dark    : darken($color-primary, 10%)
     )
 );
 

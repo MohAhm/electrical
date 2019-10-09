@@ -3,7 +3,7 @@
 // ============================================= 
 
 .container {
-    padding: 0 em(10px);
+    padding: 0 5%;
     @extend .centered;
 
     @include mq(tablet) {

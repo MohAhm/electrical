@@ -69,21 +69,8 @@ button {
     text-transform: uppercase;
 }
 
-input,
-textarea {
-    display: block;
-    padding: 15px;
-    width: 100%;
-    outline: 0;
-    border: 0;
-}
-
-input:focus,
-textarea:focus {
-    transition: $trns_duration;
-}
-
-section {
+section,
+form {
     padding: em(60px) 0;
 }
 

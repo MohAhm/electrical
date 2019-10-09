@@ -17,7 +17,7 @@
     border-radius: em($br--default);
     width: 100%;
     color: palette(grey, dark);
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px solid transparent;
     transition:
         background-color $trns-duration ease-in-out,
         color $trns-duration ease-in-out;
@@ -31,10 +31,9 @@
 }
 
 %nav-item-on {
+    color: $white;
+    background-color: palette(color-primary);
     text-decoration: none;
-    color: palette(color-primary);
-    border-color: palette(color-primary, dark);
-    border-radius: 0;
 }
 
 
@@ -69,10 +68,10 @@
 
 // Buttons
 %btn {
-    width: 100%;
     color: $white;
     cursor: pointer;
     border: none;
+    border-radius: em($br--default);
     text-transform: uppercase;
     transition: background-color $trns-duration ease-in-out,
         color $trns-duration ease-in-out;

@@ -30,7 +30,7 @@
                                 <li class="nav__link--current"><a href="index.html">Home</a></li>
                                 <li class="nav__link"><a href="#">Products</a></li>
                                 <li class="nav__link"><a href="#">About</a></li>
-                                <li class="nav__link"><a href="#">Contact</a></li>
+                                <li class="nav__link"><a href="contact.html">Contact</a></li>
                             </ul>
                         </nav>
                     </div><!-- ./row__col--9 -->
@@ -129,7 +129,7 @@
             <div class="container">
                 <h2 class="headline-secondary center-align">Velit Dolor</h2>
 
-                <div class="row slides">
+                <div id="test1" class="row slides">
                     <div class="row__col--3">
                         <img class="img__sponsor" src="img/abb.png" alt="">
                     </div>
@@ -177,10 +177,11 @@
             $(this).next('.nav').toggleClass("is-collapsed-mobile");
         });
 
-        $('.slides').slick({
-            autoplay: true,
+        $('.sponsors .slides').slick({
             slidesToShow: 4,
             slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1000,
 
             responsive: [{
                 breakpoint: 480,
