@@ -34,12 +34,12 @@ h3 {
 }
 
 a {
-    color: palette(color-primary, light);
+    text-transform: capitalize;
+    color: $color-primary;
     text-decoration: none;
     transition: color $trns-duration ease-in-out;
 
     &:hover {
-        color: palette(color-primary);
         text-decoration: underline;
     }
 }

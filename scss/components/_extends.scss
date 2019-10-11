@@ -32,7 +32,7 @@
 
 %nav-item-on {
     color: $white;
-    background-color: palette(color-primary);
+    background-color: $color-primary;
     text-decoration: none;
 }
 
@@ -69,6 +69,7 @@
 // Buttons
 %btn {
     color: $white;
+    font-weight: $font-weight--bold;
     cursor: pointer;
     border: none;
     border-radius: em($br--default);

@@ -6,11 +6,11 @@
     @extend %btn;
     width: 100%;
     margin-top: em(15px);
-    padding: em(10px) 0;
-    background-color: palette(color-primary);
+    padding: em(12px) em(19px);
+    background-color: $black;
 
     &:hover {
-        background-color: palette(color-primary, dark);
+        background-color: lighten($black, 15%);
     }
 
     @include mq(tablet) {

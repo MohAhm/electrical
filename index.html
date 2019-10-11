@@ -6,8 +6,11 @@
     <title>Electrical</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="js/slick/slick.css">
-    <link rel="stylesheet" href="js/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/solid.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -17,7 +20,7 @@
             <div class="container">
                 <div class="row">
                     <div class="row__col--3">
-                        <a href="#">
+                        <a href="index.html">
                             <img class="img__logo" src="img/logo.jpg" alt="Logo name">
                         </a>
                     </div><!-- ./row__col--3 -->
@@ -29,8 +32,11 @@
                             <ul class="nav is-collapsed-mobile">
                                 <li class="nav__link--current"><a href="index.html">Home</a></li>
                                 <li class="nav__link"><a href="#">Products</a></li>
-                                <li class="nav__link"><a href="#">About</a></li>
-                                <li class="nav__link"><a href="contact.html">Contact</a></li>
+                                <li class="nav__link"><a href="#">About us</a></li>
+                                <li class="nav__link"><a href="#">Services</a></li>
+                                <li class="nav__link"><a href="#">Document</a></li>
+                                <li class="nav__link"><a href="#">News</a></li>
+                                <li class="nav__link"><a href="contact.html">Get quote</a></li>
                             </ul>
                         </nav>
                     </div><!-- ./row__col--9 -->
@@ -86,9 +92,7 @@
                             </div><!-- ./img__frame--overlay -->
                         </a><!-- ./img__frame -->
                     </div><!-- ./row__col--4 -->
-                </div><!-- ./row -->
 
-                <div class="row center-align">
                     <div class="row__col--4">
                         <a href="#" class="img__frame">
                             <img src="img/2.jpg" alt="">
@@ -162,8 +166,42 @@
 
     <footer class="main-footer">
         <div class="container">
+            <div class="row">
+                <div class="row__col--4">
+                    <h3>Contact us</h3>
+                    <ul class="contact-info">
+                        <li class="fas fa-map-marker-alt"> Address: SE-123 45 Stockholm</li>
+                        <li class="fas fa-phone-alt"> Telefon: 08-11 22 33</li>
+                        <li class="fas fa-envelope"> Email: <a href="mailto:info@neesab.com">info@neesab.com</a>
+                        </li>
+                    </ul>
+                </div><!-- ./row__col--4 -->
+                <div class="row__col--4">
+                    <h3>Pages</h3>
+                    <ul class="pages">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Document</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Get quote</a></li>
+                    </ul>
+                </div><!-- ./row__col--4 -->
+                <div class="row__col--4">
+                    <h3>Follow us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="fab fa-linkedin-in"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-youtube"></a>
+                        <a href="#" class="fab fa-facebook-square"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                </div><!-- ./row__col--4 -->
+            </div><!-- ./row -->
+
             <div class="row center-align">
-                <div class="row__col--12">
+                <div class="row__col--12 copy-right">
                     <p>&copy;2019 Electrical.</p>
                 </div><!-- ./row__col--12 -->
             </div><!-- ./row -->
@@ -171,7 +209,7 @@
     </footer><!-- ./main-footer -->
 
     <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script>
         $('#toggle').click(function () {
             $(this).next('.nav').toggleClass("is-collapsed-mobile");

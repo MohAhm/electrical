@@ -16,7 +16,8 @@
     padding: 1em em(10px);
 
     @include mq(tablet) {
-        @include flexbox($dir: row);
+        @include flexbox($dir: row, $just: center);
+        flex-wrap: wrap;
 
         @include elem(col) {
             @include g-columns;
@@ -30,9 +31,5 @@
 
     @include mq(tablet) {
         margin-top: 0;
-
-        &+& {
-            margin-left: em(10px);
-        }
     }
 }

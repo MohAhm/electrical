@@ -4,7 +4,41 @@
 
 .main-footer {
     color: $white;
-
-    padding: em(32px);
+    padding: em(32px) 0;
     background-color: $black;
+
+    h3 {
+        margin-bottom: em(20px);
+    }
+
+    a {
+        color: $white;
+    }
+
+    .contact-info {
+
+        .fas {
+            display: block;
+            margin-bottom: em(10px);
+        }
+
+    }
+
+    .social-icons {
+
+        a:hover {
+            text-decoration: none;
+            opacity: 0.7;
+        }
+
+        .fab {
+            font-size: em(32px);
+            padding-right: em(7px);
+            padding-bottom: em(16px);
+        }
+    }
+
+    .copy-right {
+        border-top: 2px solid $white;
+    }
 }

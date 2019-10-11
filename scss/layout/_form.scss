@@ -51,7 +51,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-    border-color: palette(color-primary);
+    border-color: $color-primary;
     -webkit-transition: border-color $trns_duration ease-out;
     transition: border-color $trns_duration ease-out;
 }
