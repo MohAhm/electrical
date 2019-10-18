@@ -6,7 +6,7 @@
     @extend %btn;
     width: 100%;
     margin-top: em(15px);
-    padding: em(12px) em(19px);
+    padding: em(16px) em(19px);
     background-color: $black;
 
     &:hover {
@@ -15,6 +15,5 @@
 
     @include mq(tablet) {
         width: 25%;
-        padding: em(10px) em(30px);
     }
 }

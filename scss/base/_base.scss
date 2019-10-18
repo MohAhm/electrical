@@ -11,10 +11,6 @@ body {
     font-family: $font-family;
     line-height: ($base__line/$base__font-size);
     background-color: palette(grey, light);
-
-    @include mq(tablet) {
-        padding-top: em(132px);
-    }
 }
 
 h1 {

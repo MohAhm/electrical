@@ -3,14 +3,25 @@
 // ============================================= 
 
 .banner {
+    @include bg-imgs($bg-img);
+}
+
+[class^="banner--"] {
     color: $white;
     padding: em(51px) 0;
-    background: $black url($path--rel+'/12.jpg') no-repeat bottom;
-    background-size: cover;
+
+    .btn {
+        text-decoration: none;
+    }
 
     @include mq(tablet) {
-        padding: em(160px) 0;
-        // remove gap between header and banner
-        margin-top: em(-7px);
+
+        .headline-primary {
+            font-size: em(54px);
+            font-weight: $font-weight--light;
+            text-shadow: 0 0 em(8px) rgba(0, 0, 0, 0.6);
+            padding: em(15px) 0;
+        }
+
     }
 }

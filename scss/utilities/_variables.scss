@@ -47,10 +47,22 @@ $g-col-count    : 12;
 // Path to Assets
 $path--rel      : "../img";
 
+// Bannar background images 
+$bg-img: (
+    home:       $path--rel+"/home.jpg",
+    about:      $path--rel+"/about.jpg",
+    product:    $path--rel+"/product.jpg",
+    service:    $path--rel+"/service.jpg",
+    contact:    $path--rel+"/contact.jpg",
+    media:      $path--rel+"/media.jpg",
+    get-quote:  $path--rel+"/quote.jpg"
+);
+
+
 // Breakpoints
 $mobile     : 320px;
-$tablet     : 1050px;
-$desktop    : 1200px;
+$tablet     : 768px;
+$desktop    : 1024px;
 
 // Layout
 $max-width  : 1400px;

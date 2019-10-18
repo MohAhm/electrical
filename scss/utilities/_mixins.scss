@@ -73,3 +73,16 @@
         @error "'#{$el}' is not a vaild pseude-element";
     }
 }
+
+// Generate modifier background images 
+@mixin bg-imgs($map) {
+    
+    @each $page,
+    $img in $map {
+        &--#{$page} {
+            background: $black url($img) no-repeat center;
+            background-size: cover;
+        }
+    }
+
+}

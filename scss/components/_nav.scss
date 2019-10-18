@@ -4,8 +4,6 @@
 
 .nav {
     @include flexbox($dir: column);
-    margin-top: em(15px, 18px);
-    padding: em(20px) 0;
     flex-basis: 100%;
 
     @include elem(link) {
@@ -31,6 +29,13 @@
 
     @include mq(tablet) {
         @include flexbox(flex, row, flex-end, center);
-        flex-wrap: wrap;
+
+        @include elem(link) {
+            margin-left: em(30px);
+
+            @include modi(current) {
+                margin-left: em(30px);
+            }
+        }
     }
 }
