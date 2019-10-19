@@ -16,7 +16,7 @@
     padding: 1em em(10px);
 
     @include mq(tablet) {
-        @include flexbox($dir: row, $just: center);
+        @include flexbox($dir: row, $just: space-between);
         flex-wrap: wrap;
 
         @include elem(col) {

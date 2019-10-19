@@ -4,13 +4,10 @@
 
 .img {
 
-    @include elem(logo) {
+    @include elem(radius) {
         @extend %img-disp;
-
-        @include mq(tablet) {
-            margin-left: 0;
-            margin-right: 0;
-        }
+        border-radius: $br--default;
+        margin-bottom: em(20px);
     }
 
     @include elem(frame) {

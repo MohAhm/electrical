@@ -27,7 +27,7 @@
 }
 
 %nav-item-on {
-    border-bottom-color: $white;
+    border-bottom-color: $color-primary;
     text-decoration: none;
 
     @include mq(mobile) {
@@ -39,7 +39,6 @@
 %hdln-prim {
     font-weight: $font-weight--bold;
     font-size: em(42px);
-    text-transform: capitalize;
     line-height: (46px / 42px);
 }
 
@@ -65,11 +64,13 @@
 
 // Buttons
 %btn {
+    width: 100%;
+    padding: em(12px) em(32px);
     color: $white;
-    font-weight: $font-weight--bold;
+    font-weight: $font-weight--reqular;
     cursor: pointer;
     border: none;
-    border-radius: em($br--default);
+    border-radius: em(20px);
     text-transform: uppercase;
     transition: background-color $trns-duration ease-in-out,
         color $trns-duration ease-in-out;

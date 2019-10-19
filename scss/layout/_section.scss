@@ -2,12 +2,11 @@
 //              Sections                     
 // ============================================= 
 
-.products,
-.sponsors {
+.primary {
+    text-align: center;
 
-    .row {
-        padding-top: 0;
-        padding-bottom: 0;
+    p {
+        font-size: em(16px);
     }
 }
 

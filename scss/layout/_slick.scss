@@ -7,18 +7,33 @@
 }
 
 .slick-prev {
-    left: 25px;
+    left: 10px;
     z-index: 999;
 }
 
 .slick-next {
-    right: 25px;
+    right: 35px;
     z-index: 999;
 }
 
 .slick-prev::before,
 .slick-next::before {
-    color: $black;
+    color: $white;
+    background-color: $black;
     font-size: 30px;
+    opacity: .5;
+}
+
+.slick-prev::before {
+    content: '\2329';
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-right: 0.5em;
+}
+
+.slick-next::before {
+    content: '\232A';
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 0.5em;
 }
