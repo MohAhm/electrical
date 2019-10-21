@@ -48,7 +48,6 @@
     }
 
     @include elem(sponsor) {
-        @extend %img-disp;
         max-height: em(40px);
     }
 }

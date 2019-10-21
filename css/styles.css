@@ -395,36 +395,36 @@ footer p {
   display: flex;
   flex-direction: column;
   padding: 1em 0.625em; }
+  .row__col--1 {
+    flex-basis: 8.3333333333%; }
+  .row__col--2 {
+    flex-basis: 16.6666666667%; }
+  .row__col--3 {
+    flex-basis: 25%; }
+  .row__col--4 {
+    flex-basis: 33.3333333333%; }
+  .row__col--5 {
+    flex-basis: 41.6666666667%; }
+  .row__col--6 {
+    flex-basis: 50%; }
+  .row__col--7 {
+    flex-basis: 58.3333333333%; }
+  .row__col--8 {
+    flex-basis: 66.6666666667%; }
+  .row__col--9 {
+    flex-basis: 75%; }
+  .row__col--10 {
+    flex-basis: 83.3333333333%; }
+  .row__col--11 {
+    flex-basis: 91.6666666667%; }
+  .row__col--12 {
+    flex-basis: 100%; }
   @media (min-width: 769px) {
     .row {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      flex-wrap: wrap; }
-      .row__col--1 {
-        flex-basis: 8.3333333333%; }
-      .row__col--2 {
-        flex-basis: 16.6666666667%; }
-      .row__col--3 {
-        flex-basis: 25%; }
-      .row__col--4 {
-        flex-basis: 33.3333333333%; }
-      .row__col--5 {
-        flex-basis: 41.6666666667%; }
-      .row__col--6 {
-        flex-basis: 50%; }
-      .row__col--7 {
-        flex-basis: 58.3333333333%; }
-      .row__col--8 {
-        flex-basis: 66.6666666667%; }
-      .row__col--9 {
-        flex-basis: 75%; }
-      .row__col--10 {
-        flex-basis: 83.3333333333%; }
-      .row__col--11 {
-        flex-basis: 91.6666666667%; }
-      .row__col--12 {
-        flex-basis: 100%; } }
+      flex-wrap: wrap; } }
 
 [class^="row__col--"] {
   margin-top: 0.625em;
@@ -520,10 +520,14 @@ footer p {
 .sponsors {
   background-color: #FFF; }
 
-.about p {
+.secondary h2 {
+  margin-top: 0; }
+.secondary p {
   font-size: 1.25em; }
-.about img {
+.secondary img {
   margin-bottom: 1.875em; }
+.secondary li {
+  list-style-type: circle; }
 
 form {
   max-width: 760px;
@@ -657,10 +661,11 @@ h2, .headline-secondary, .headline-secondary--grouped {
   letter-spacing: 2px;
   color: #1C1C1C; }
 
-.img__radius, .img__frame, .img__sponsor {
+.img__radius, .img__frame {
   display: block;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background-color: #1C1C1C; }
 
 .icn--nav-toggle {
   line-height: 0;

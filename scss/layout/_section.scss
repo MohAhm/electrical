@@ -14,7 +14,11 @@
     background-color: $white;
 }
 
-.about {
+.secondary {
+
+    h2 {
+        margin-top: 0;
+    }
 
     p {
         font-size: em(20px);
@@ -24,4 +28,7 @@
         margin-bottom: em(30px);
     }
 
+    li {
+        list-style-type: circle;
+    }
 }
