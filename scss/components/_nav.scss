@@ -29,6 +29,7 @@
 
     @include mq(tablet) {
         @include flexbox(flex, row, flex-end, center);
+        margin: em(10px) 0;
 
         @include elem(link) {
             margin-left: em(30px);

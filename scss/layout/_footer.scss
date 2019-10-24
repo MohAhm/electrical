@@ -5,7 +5,7 @@
 .main-footer {
     color: $white;
     padding: em(32px) 0;
-    background-color: $black;
+    background-color: $color-primary;
 
     h3 {
         margin-bottom: em(20px);
@@ -24,10 +24,15 @@
 
     }
 
+    .pages {
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
     .social-icons {
 
         a:hover {
-            text-decoration: none;
             opacity: 0.7;
         }
 

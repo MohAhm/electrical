@@ -21,14 +21,13 @@ legend {
     font-size: em(22px);
     padding-bottom: em(15px);
     width: 100%;
-    color: $black;
     text-transform: capitalize;
 }
 
 label {
     display: block;
     margin-bottom: em(15px);
-    color: palette(grey, dark);
+    color: $black;
 
     .required {
         font-size: em(20px);
@@ -37,6 +36,7 @@ label {
 }
 
 input,
+select,
 textarea {
     margin: 0;
     padding: em(15px);
@@ -49,33 +49,22 @@ textarea {
     background-color: $white;
 }
 
+select {
+    padding: 6px;
+    height: 52px;
+    color: palette(grey, dark);
+}
+
 input:focus,
+select:focus,
 textarea:focus {
-    border-color: $color-primary;
+    border-color: $color-primary-light;
     -webkit-transition: border-color $trns_duration ease-out;
     transition: border-color $trns_duration ease-out;
 }
 
 ::placeholder {
-    text-align: right;
-    color: palette(grey);
+    color: palette(grey, dark);
     font-style: italic;
     font-weight: 300;
-}
-
-.contact-row {
-    @include mq(tablet) {
-        @include flexbox(flex, row, flex-end);
-        flex-wrap: wrap;
-
-        label {
-            flex: 1;
-            align-self: center;
-            margin-bottom: em(25px);
-        }
-
-        input {
-            flex: 4;
-        }
-    }
 }

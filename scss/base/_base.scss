@@ -31,13 +31,9 @@ h3 {
 
 a {
     text-transform: capitalize;
-    color: $color-primary;
+    color: $color-primary-light;
     text-decoration: none;
     transition: color $trns-duration ease-in-out;
-
-    &:hover {
-        text-decoration: underline;
-    }
 }
 
 p {

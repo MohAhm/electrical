@@ -14,12 +14,11 @@
     display: block;
     padding: em(8px) 0;
     width: 100%;
-    color: $white;
+    color: $black;
     border-bottom: 2px solid transparent;
     transition: color $trns-duration ease-in-out;
 
     @include mq(mobile) {
-        color: $black;
         border-bottom-color: palette(grey);
         padding-top: em(14px);
         padding-bottom: em(14px);
@@ -31,7 +30,7 @@
     text-decoration: none;
 
     @include mq(mobile) {
-        border-bottom-color: $black;
+        border-bottom-color: $color-primary;
     }
 }
 
@@ -47,6 +46,7 @@
     text-transform: uppercase;
     letter-spacing: $letter-space;
     color: $black;
+    // margin-bottom: em(30px);
 }
 
 // Image

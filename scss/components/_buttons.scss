@@ -3,15 +3,21 @@
 // ============================================= 
 
 .btn {
-    @extend %btn;
-    margin-top: em(15px);
-    background-color: $color-primary;
+    &-default {
+        @extend %btn;
+        background-color: $color-primary-light;
 
-    &:hover {
-        background-color: lighten($color-primary, 5%);
+        &:hover {
+            background-color: $color-primary;
+        }
     }
 
-    @include mq(tablet) {
-        width: 25%;
+    &-submit {
+        @extend %btn;
+        background-color: $color-secondary;
+
+        &:hover {
+            background-color: $color-secondary-dark;
+        }
     }
 }

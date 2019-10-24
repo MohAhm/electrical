@@ -14,12 +14,21 @@ $font-weight--bold          : 700;
 
 
 // Descriptive Base Colors
-$white              : #FFF;
-$black              : #1C1C1C;
-$grey               : #BDC3C7;
-$color-primary      : #208A01;
+$white          : #FFF;
+$black          : #1C1C1C;
+$grey           : #BDC3C7;
 
-// $color-secondary    : darken(adjust-hue($japanese-laurel, -2), 10.20);
+$di-serria      : #D9A25F;
+$tropical_rain  : #027353; 
+$observatory    : #038C65;
+$leather        : #A6775B;
+$mandys_pink    : #F2C3A7;
+
+// Color Usage
+$color-primary          : $tropical_rain;
+$color-primary-light    : $observatory;
+$color-secondary        : $di-serria;
+$color-secondary-dark   : $leather;
 
 // Color Palette Modifiers
 $color-palettes: (

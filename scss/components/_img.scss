@@ -4,47 +4,19 @@
 
 .img {
 
+    @include elem(logo) {
+        display: block;
+
+        @include mq(tablet) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
     @include elem(radius) {
         @extend %img-disp;
         border-radius: $br--default;
         margin-bottom: em(20px);
-    }
-
-    @include elem(frame) {
-        @extend %img-disp;
-        position: relative;
-        line-height: 1;
-        margin-bottom: 1em;
-        overflow: hidden;
-        transform-origin: 0 0;
-        padding: em(13px);
-        border: 1px solid palette(grey, dark);
-
-        &:hover img {
-            transform: scale(1.2);
-        }
-
-        @include modi(overlay) {
-            color: $white;
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            padding-left: 20px;
-            padding-right: 20px;
-
-            /* For centering text inside .photo-overlay */
-            @include flexbox(flex, column, center, center);
-            background: rgba(0, 0, 0, .5);
-
-            opacity: 0;
-            transition: opacity .5s;
-
-            &:hover {
-                opacity: 1;
-            }
-        }
     }
 
     @include elem(sponsor) {
