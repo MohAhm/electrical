@@ -58,7 +58,9 @@ $path--rel      : "../img";
 
 // Bannar background images 
 $bg-img: (
-    home:       $path--rel+"/home.jpg",
+    home1:      $path--rel+"/home1.jpg",
+    home2:      $path--rel+"/home2.jpg",
+    home3:      $path--rel+"/home3.jpg",
     about:      $path--rel+"/about.jpg",
     product:    $path--rel+"/product.jpg",
     service:    $path--rel+"/service.jpg",

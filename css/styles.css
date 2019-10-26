@@ -466,35 +466,41 @@ footer p {
     padding-right: 0.4375em;
     padding-bottom: 1em; }
   .main-footer .copy-right {
-    border-top: 2px solid #FFF; }
+    border-top: 2px solid #FFF;
+    text-align: center;
+    margin-top: 1.875em; }
 
-.banner--home {
-  background: #1C1C1C url("../img/home.jpg") no-repeat center;
+.banner--home1 {
+  background: #1C1C1C url("../img/home1.jpg") no-repeat bottom;
+  background-size: cover; }
+.banner--home2 {
+  background: #1C1C1C url("../img/home2.jpg") no-repeat bottom;
+  background-size: cover; }
+.banner--home3 {
+  background: #1C1C1C url("../img/home3.jpg") no-repeat bottom;
   background-size: cover; }
 .banner--about {
-  background: #1C1C1C url("../img/about.jpg") no-repeat center;
+  background: #1C1C1C url("../img/about.jpg") no-repeat bottom;
   background-size: cover; }
 .banner--product {
-  background: #1C1C1C url("../img/product.jpg") no-repeat center;
+  background: #1C1C1C url("../img/product.jpg") no-repeat bottom;
   background-size: cover; }
 .banner--service {
-  background: #1C1C1C url("../img/service.jpg") no-repeat center;
+  background: #1C1C1C url("../img/service.jpg") no-repeat bottom;
   background-size: cover; }
 .banner--contact {
-  background: #1C1C1C url("../img/contact.jpg") no-repeat center;
+  background: #1C1C1C url("../img/contact.jpg") no-repeat bottom;
   background-size: cover; }
 .banner--media {
-  background: #1C1C1C url("../img/media.jpg") no-repeat center;
+  background: #1C1C1C url("../img/media.jpg") no-repeat bottom;
   background-size: cover; }
 .banner--get-quote {
-  background: #1C1C1C url("../img/quote.jpg") no-repeat center;
+  background: #1C1C1C url("../img/quote.jpg") no-repeat bottom;
   background-size: cover; }
 
 [class^="banner--"] {
   color: #FFF;
-  padding: 6.25em 0; }
-  [class^="banner--"] .btn {
-    text-decoration: none; }
+  padding: 10% 0; }
   @media (min-width: 769px) {
     [class^="banner--"] .headline-primary {
       font-size: 3.375em;
@@ -504,7 +510,8 @@ footer p {
       margin-bottom: 0; } }
 
 .primary {
-  text-align: center; }
+  text-align: center;
+  padding: 0; }
   .primary p {
     font-size: 1em; }
 
@@ -575,6 +582,22 @@ textarea:focus {
   color: #7e8991;
   font-style: italic;
   font-weight: 300; }
+
+.slick-dots {
+  position: absolute;
+  width: 100%;
+  bottom: 2px;
+  left: 0; }
+  @media (min-width: 769px) {
+    .slick-dots {
+      bottom: 20px; } }
+
+.slick-dots li button:before {
+  font-size: 16px;
+  color: #FFF; }
+
+.slick-dots li.slick-active button:before {
+  color: #FFF; }
 
 .slick-track {
   display: flex;

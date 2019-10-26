@@ -76,11 +76,11 @@
 
 // Generate modifier background images 
 @mixin bg-imgs($map) {
-    
+
     @each $page,
     $img in $map {
         &--#{$page} {
-            background: $black url($img) no-repeat center;
+            background: $black url($img) no-repeat bottom;
             background-size: cover;
         }
     }

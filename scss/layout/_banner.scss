@@ -8,11 +8,7 @@
 
 [class^="banner--"] {
     color: $white;
-    padding: em(100px) 0;
-
-    .btn {
-        text-decoration: none;
-    }
+    padding: 10% 0;
 
     @include mq(tablet) {
 
