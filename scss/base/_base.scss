@@ -22,7 +22,7 @@ h2 {
 }
 
 h3 {
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: em(20px);
     line-height: ($base__line / 24px);
     margin-top: em(13px);
